@@ -68,6 +68,7 @@ p {
   margin: 15px 0;
   font-family: $chaparral;
   color: #656565;
+  color: #434D54;
   line-height: 1.5em;
   font-size: 22px;
 }
@@ -260,6 +261,10 @@ nav {
 }
 
 .post {
+  h1 {
+    text-align: center;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
