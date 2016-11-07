@@ -13,10 +13,30 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <!-- Fonts -->
+    <script src="https://use.typekit.net/gei3wmu.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Montserrat:400,500,600">
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
+  <body class="homepage">
+    <!-- <header>header</header> -->
+    <main class="content">
+      <div class="left half"
+        style="background-image: url('{{ site.baseurl }}/images/lumberjack.png')"
+      >
+        left
+      </div>
+      <div class="right half">
+        {{ content }}
+        <footer>
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </main>
+
+    <!-- <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
@@ -32,19 +52,19 @@
           </nav>
         </header>
       </div>
-    </div>
+    </div> -->
 
-    <div id="main" role="main" class="container">
+    <!-- <div id="main" role="main" class="container">
       {{ content }}
-    </div>
+    </div> -->
 
-    <div class="wrapper-footer">
+    <!-- <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div>
+    </div> -->
 
     {% include analytics.html %}
   </body>

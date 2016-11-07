@@ -17,10 +17,12 @@ html {
   font-size: 100%;
 }
 
-body {
+html, body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  height: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -31,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $montserrat;
   color: $darkerGray;
   font-weight: bold;
 
@@ -66,6 +68,7 @@ h4 {
 
 p {
   margin: 15px 0;
+  font-family: $chaparral;
 }
 
 a {
@@ -194,7 +197,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $montserrat;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +216,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $montserrat;
   font-size: 18px;
 
   @include mobile {
@@ -244,6 +247,10 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  font-family: $chaparral;
+  color: #656565;
+  line-height: 1.5em;
+  font-size: 22px;
 }
 
 .posts > .post:last-child {
@@ -287,3 +294,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "homepage";
