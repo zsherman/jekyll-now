@@ -23,18 +23,11 @@
   <body class="homepage">
     <!-- <header>header</header> -->
     <main class="content">
-      <div class="left half"
-        style="background-image: url('{{ site.baseurl }}/images/lumberjack.png')"
-      >
-        left
-      </div>
-      <div class="right half">
-        {{ content }}
-        <footer>
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+      {{ content }}
     </main>
+    <footer>
+      {% include svg-icons.html %}
+    </footer>
 
     <!-- <div class="wrapper-masthead">
       <div class="container">
