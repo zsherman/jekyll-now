@@ -26,7 +26,7 @@ html, body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 700px;
   padding: 0 10px;
   width: 100%;
 }
@@ -68,8 +68,6 @@ h4 {
 p {
   margin: 15px 0;
   font-family: $chaparral;
-  color: #656565;
-  color: #434D54;
   line-height: 1.5em;
   font-size: 22px;
 }
@@ -251,7 +249,7 @@ nav {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
   font-family: $chaparral;
-  color: #656565;
+  color: rgb(113, 113, 120);
   line-height: 1.5em;
   font-size: 22px;
 }
@@ -261,44 +259,9 @@ nav {
   border-bottom: none;
 }
 
-.post {
-  h1 {
-    text-align: center;
-  }
-
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-@import "homepage";
+@import "layout";
+@import "post"

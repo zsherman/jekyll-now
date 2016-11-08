@@ -1,0 +1,58 @@
+.post {
+
+
+  h1 {
+    text-align: center;
+    font-family: $brandon;
+    font-weight: 600;
+    font-size: 36px;
+    color: #262623;
+    letter-spacing: 0.26px;
+  }
+
+  .date {
+    text-align: center;
+    font-family: $brandon;
+    font-size: 18px;
+    color: #262623;
+    letter-spacing: 0.13px;
+    padding-bottom: 25px;
+  }
+
+  .entry {
+    font-family: $chaparral;
+    font-weight: 300;
+    font-size: 22px;
+    color: #666666;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.16px;
+    line-height: 32px;
+  }
+
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
